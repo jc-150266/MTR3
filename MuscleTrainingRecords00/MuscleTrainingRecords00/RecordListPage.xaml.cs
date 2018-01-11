@@ -30,7 +30,7 @@ namespace MuscleTrainingRecords00
             Content = layout;
         }*/
             
-                var layout = new StackLayout { HorizontalOptions = LayoutOptions.Center, Margin = new Thickness { Top = 100 } };
+                var layout = new StackLayout { Orientation = StackOrientation.Horizontal = new Thickness { Top = 100 } };
                 var record = RecordsModel.SelectRecords();
             if(record != null) { 
 
