@@ -42,7 +42,6 @@ namespace MuscleTrainingRecords00
                     layout.Children.Add(new Label { Text = Memo.M_leg.ToString() });
 
 
-
                 }
 
                 
