@@ -30,7 +30,7 @@ namespace MuscleTrainingRecords00
             Content = layout;
         }*/
             
-                var layout = new StackLayout { Orientation = StackOrientation.Horizontal = new Thickness { Top = 100 } };
+                var layout = new StackLayout { HorizontalOptions = LayoutOptions.Horizontal, Margin = new Thickness { Top = 100 } };
                 var record = RecordsModel.SelectRecords();
             if(record != null) { 
 
@@ -40,6 +40,7 @@ namespace MuscleTrainingRecords00
                     layout.Children.Add(new Label { Text = Memo.M_weight.ToString() });
                     layout.Children.Add(new Label { Text = Memo.M_set.ToString() });
                     layout.Children.Add(new Label { Text = Memo.M_leg.ToString() });
+
 
 
                 }
